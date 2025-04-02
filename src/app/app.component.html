@@ -1,6 +1,8 @@
+
 <div class="container my-5">
   <div class="row">
     <div class="col-12">
+      <h1 class=" mat-typography mat-elevation-z20 mat-display-1 text-center p-2">Reactive Form - Material</h1>
       <form [formGroup]="signUpForm" (ngSubmit)="onSignUp()">
       <!-- username control -->
      <mat-card class="mb-4">
@@ -33,7 +35,7 @@
          </mat-error>
 
          <mat-error *ngIf="form['email'].dirty && form['email'].hasError('pattern')">
-          Invalid email id {{'deepti@gmail.com'}} 
+          Invalid email id {{'JhonDoe@gmail.com'}} 
          </mat-error>
 
          <mat-error *ngIf="form['email'].dirty && form['email'].hasError('emailExistError')">
